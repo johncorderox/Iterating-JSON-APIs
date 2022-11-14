@@ -1,5 +1,6 @@
 # Iterating-JSON-APIs
 A visual-based guide on iteration JSON APIs with Ruby.
+https://www.reddit.com/user/johncorderox/comments/.json
 
 Test JSON API Response
 ```javascript
