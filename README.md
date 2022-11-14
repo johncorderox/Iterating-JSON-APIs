@@ -10,7 +10,7 @@ Test JSON API Response
     "data":{
       "1002":{
           "generic_name": "ACETAMINOPHEN",
-          "brand_name": Tylenol,
+          "brand_name": "Tylenol",
           "film_coated": true,
           "dosage": [
                       200,
@@ -47,7 +47,7 @@ Test JSON API Response
         },
         "1003":{
           "generic_name": "MECLIZINE",
-          "brand_name": Dramamine,
+          "brand_name": "Dramamine",
           "film_coated": false,
           "dosage": [
                       25,
