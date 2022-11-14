@@ -43,16 +43,6 @@ Test JSON API Response
             "OTC",
             "cramps"
           ],
-          notes: null
-        },
-        "1003":{
-          "generic_name": "MECLIZINE",
-          "brand_name": "Dramamine",
-          "film_coated": false,
-          "dosage": [
-                      25,
-                      50
-          ],
           "purpose": "treat motion sicknessx",
           "uses": [
                     "vomiting",
@@ -67,20 +57,41 @@ Test JSON API Response
             "y":0,
             "w":250,
             "h":250
-          },
-          "tags": [
-            "motion sickness",
-            "OTC",
-            "vertigo"
-          ],
-          notes: "great for vertigo relief"
+          }
+        },
+          "1003":{
+            "generic_name": "MECLIZINE",
+            "brand_name": "Dramamine",
+            "film_coated": false,
+            "dosage": [
+                        25,
+                        50
+            ],
+            "purpose": "treat motion sicknessx",
+            "uses": [
+                      "vomiting",
+                      "motion sickness",
+                      "nausea"
+                      
+            ],
+            "image": {
+              "full": "dramamine.png",
+              "small": "dramamine_small.png",
+              "x":0,
+              "y":0,
+              "w":250,
+              "h":250
+            },
+            "tags": [
+              "motion sickness",
+              "OTC",
+              "vertigo"
+            ]
+          }
+        },
+        "meta": {
+          "total_count": 2,
+          "call_type": "GET"
         }
-      },
-      meta: {
-        "total_count": 2,
-        "call_type": "GET",
-        "called_at": "2022-10-31T18:25:19.519Z"
       }
-    }
-}'
 ```
