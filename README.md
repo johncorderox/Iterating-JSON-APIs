@@ -4,77 +4,83 @@ https://www.reddit.com/user/johncorderox/comments/.json
 
 Test JSON API Response
 ```javascript
-"type":"item",
-"version":"5.15.1",
-"basic":{},
-"data":{
-        "1001":{
-                "name":"Boots of Speed",
-                "group":"BootsNormal",
-                "description":"<groupLimit>Limited to 1.</groupLimit><br><br>                                                 <unique>UNIQUE Passive - Enhanced Movement:</unique> +25 Movement Speed<br><br>                 <i>(Unique Passives with the same name don't stack.)</i>",
-                "colloq":";",
-                "plaintext":"Slightly increases Movement Speed",
-                "into":[
-                        "3006",
-                        "3047",
-                        "3020",
-                        "3158",
-                        "3111",
-                        "3117",
-                        "3009"
-                ],
-                "image":{
-                        "full":"1001.png",
-                        "sprite":"item0.png",
-                        "group":"item",
-                        "x":0,
-                        "y":0,
-                        "w":48,
-                        "h":48
-                },
-                "gold":{
-                        "base":325,
-                        "purchasable":true,
-                        "total":325,
-                        "sell":227
-                },
-                "tags":[
-                        "Boots"
-                ],
-                "stats":{
-                        "FlatMovementSpeedMod":25.0
-                }
+{
+    "type": "item",
+    "version": "1.7.20",
+    "data":{
+      "1002":{
+          "generic_name": "ACETAMINOPHEN",
+          "brand_name": Tylenol,
+          "film_coated": true,
+          "dosage": [
+                      200,
+                      400,
+                      500,
+                      1000
+          ],
+          "purpose": "pain reliever/fever reducer",
+          "uses": [
+                    "headache",
+                    "muscular aches",
+                    "backache",
+                    "minor pain of arthritis",
+                    "the common cold",
+                    "toothache",
+                    "premenstrual and menstrual cramps",
+                    "temporarily reduces fever"
+                    
+          ],
+          "image": {
+            "full": "tylenol.png",
+            "small": "tylenol_small.png",
+            "x":0,
+            "y":0,
+            "w":100,
+            "h":100
+          },
+          "tags": [
+            "pain",
+            "OTC",
+            "cramps"
+          ],
+          notes: null
         },
-        "1004":{
-                "name":"Faerie Charm",
-                "description":"<stats><mana>+25% Base Mana Regen </mana></stats>",
-                "colloq":";",
-                "plaintext":"Slightly increases Mana Regen",
-                "into":[
-                        "3028",
-                        "3070",
-                        "3073",
-                        "3114"
-                ],
-                "image":{
-                        "full":"1004.png",
-                        "sprite":"item0.png",
-                        "group":"item",
-                        "x":48,
-                        "y":0,
-                        "w":48,
-                        "h":48
-                },
-                "gold":{
-                        "base":180,
-                        "purchasable":true,
-                        "total":180,
-                        "sell":126
-                },
-                "tags":[
-                        "ManaRegen"
-                ],
-                "stats":{
-                }
-        },
+        "1003":{
+          "generic_name": "MECLIZINE",
+          "brand_name": Dramamine,
+          "film_coated": false,
+          "dosage": [
+                      25,
+                      50
+          ],
+          "purpose": "treat motion sicknessx",
+          "uses": [
+                    "vomiting",
+                    "motion sickness",
+                    "nausea"
+                    
+          ],
+          "image": {
+            "full": "dramamine.png",
+            "small": "dramamine_small.png",
+            "x":0,
+            "y":0,
+            "w":250,
+            "h":250
+          },
+          "tags": [
+            "motion sickness",
+            "OTC",
+            "vertigo"
+          ],
+          notes: "great for vertigo relief"
+        }
+      },
+      meta: {
+        "total_count": 2,
+        "call_type": "GET",
+        "called_at": "2022-10-31T18:25:19.519Z"
+      }
+    }
+}'
 ```
