@@ -3,11 +3,36 @@
 Iterating through JSON APIs can sometimes be daunting. However, this visual guide provides an option on how to loop through JSON, access specific information, and how to explain the process of obtaining it. This guide has two sections, one with a single API response for beginners and another with multiple responses and nested arrays/hashes. 
 
 ## Table of Contents
-- [Example JSON Response](#example-json-response)
+- [Introduction[(#introduction)
+- [Example JSON Response 1](#example-json-response-1)
 
+## Introduction
+There are a few things you might want to know and understand before getting on to the examples, but if you already have a general understanding, you can skip this part.
 
-## Example JSON Response
+- Array - a data structure that can hold a list of values.
+```ruby
+api = ["pass1", "pass2", "pass3"]
+puts api[0]
+=> "pass1"
+```
+- Hash - a data structure that works with key and value pairs for information.
+```ruby
+json = { a: "cool", b: "beans", c: "dude" }
+puts json[:a]
+=> "cool"
+```
 
+- JSON.parse() - after requiring the json library in the ruby file, `JSON.parse()` will analyze the argument and transform the JSON array into a ruby array.
+
+```ruby
+a = '[id: 1, language: "spanish"]'
+json = JSON.parse(a)
+json => [id: 1, language: "spanish"]
+json.class => Array
+
+```
+
+## Example JSON Response 1
 
 ```javascript
 {
