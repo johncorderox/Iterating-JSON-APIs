@@ -53,8 +53,8 @@ json.class => Array
                           500,
                           1000
               ],
-             },
-            ],
+           },
+          ],         
  }
 ```
 
@@ -64,6 +64,7 @@ For this example, we have a single JSON resource that is returned as an object t
 Print out the following to the console:
 1) the version attribute 
 2) the id number from the data attribute
+3) all dosage information 
 
 
 ### Answers
@@ -124,34 +125,41 @@ json = JSON.parse'{
 puts json['data'][0]['id']
 ```
 It's a little ugly on how its presented, but we can retrieve the value by first assigning the variable json and parsing it. We then use the `data` key to access the array, access the first index of the array by appending `[0]`, and then use the `id` key to access the number of 1002.
+</details>
+
+3) To obtain all the dosage information, we need to follow what we did for the previous question and iterate over the array. 
+
+<details>
+  <summary>Answer 3</summary>
+  
+```ruby
+json = JSON.parse'{
+  "type": "item",
+  "version": "1.5",
+  "data":[
+        {
+            "id":1002,
+            "generic_name": "ACETAMINOPHEN",
+            "brand_name": "Tylenol",
+            "film_coated": true,
+            "dosage": [
+                        200,
+                        400,
+                        500,
+                        1000
+            ]
+          }
+        ]
+      }'
+
+ json['data'][0]['dosage'].each do |dosage|
+  puts dosage
+ end
+```
+</details>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Example JSON Response 2
 
 ```javascript
 {
