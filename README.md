@@ -3,7 +3,7 @@
 Iterating through JSON APIs can sometimes be daunting. However, this visual guide provides an option on how to loop through JSON, access specific information, and how to explain the process of obtaining it. This guide has two sections, one with a single API response for beginners and another with multiple responses and nested arrays/hashes. 
 
 ## Table of Contents
-- [Introduction[(#introduction)
+- [Introduction](#introduction)
 - [Example JSON Response 1](#example-json-response-1)
 
 ## Introduction
