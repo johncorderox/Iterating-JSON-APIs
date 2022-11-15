@@ -63,6 +63,91 @@ Print out the following to the console:
 2) the id number from the data attribute
 
 
+### Answers
+1) To obtain the version attribute, we can simply assign the JSON response to a variable and parse it.
+<details>
+  <summary>Answer 1</summary>
+  
+```ruby
+json = JSON.parse'{
+  "type": "item",
+  "version": "1.5",
+  "data":[
+        {
+            "id":1002,
+            "generic_name": "ACETAMINOPHEN",
+            "brand_name": "Tylenol",
+            "film_coated": true,
+            "dosage": [
+                        200,
+                        400,
+                        500,
+                        1000
+            ]
+          }
+        ]
+      }'
+
+puts json['version']
+```
+
+From the API response, version is simply a key,value pair (like a hash), so we can use the key `version` to obtain the value (1.5).
+</details>
+
+2) To obtain the ID, we need to first go down the chain and get into the hash where the ID is located. The ID has a value of 1002, and it is located inside the `data` array of hashes.
+<details>
+  <summary>Answer 2</summary>
+  
+```ruby
+json = JSON.parse'{
+  "type": "item",
+  "version": "1.5",
+  "data":[
+        {
+            "id":1002,
+            "generic_name": "ACETAMINOPHEN",
+            "brand_name": "Tylenol",
+            "film_coated": true,
+            "dosage": [
+                        200,
+                        400,
+                        500,
+                        1000
+            ]
+          }
+        ]
+      }'
+
+puts json['data'][0]['id']
+```
+It's a little ugly on how its presented, but we can retrieve the value by first assigning the variable json and parsing it. We then use the `data` key to access the array, access the first index of the array by appending `[0]`, and then use the `id` key to access the number of 1002.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ```javascript
