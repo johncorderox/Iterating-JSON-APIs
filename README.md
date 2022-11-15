@@ -5,6 +5,9 @@ Iterating through JSON APIs can sometimes be daunting. However, this visual guid
 ## Table of Contents
 - [Introduction](#introduction)
 - [Example JSON Response 1](#example-json-response-1)
+  - [Answers](#answers)
+- [Example JSON Response 2](#example-json-response-2)
+  - [Answers](#answers)
 
 ## Introduction
 There are a few things you might want to know and understand before getting on to the examples, but if you already have a general understanding, you can skip this part.
@@ -32,7 +35,7 @@ json.class => Array
 
 ```
 
-## Example JSON Response 1 (Easy)
+## Example JSON Response 1
 
 ```javascript
 {
