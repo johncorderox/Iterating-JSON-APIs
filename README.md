@@ -32,11 +32,42 @@ json.class => Array
 
 ```
 
-## Example JSON Response 1
+## Example JSON Response 1 (Easy)
 
 ```javascript
 {
-     "type": "item",
+    "type": "item",
+    "version": "1.5",
+    "data":[
+          {
+              "id":1002,
+              "generic_name": "ACETAMINOPHEN",
+              "brand_name": "Tylenol",
+              "film_coated": true,
+              "dosage": [
+                          200,
+                          400,
+                          500,
+                          1000
+              ],
+             },
+            ],
+ }
+```
+
+### Explanation
+For this example, we have a single JSON resource that is returned as an object that contains a `type`, `version`, and an array of hashes for `data`. We can see that we have a nested array for `dosage` inside the hash too! Let's start with requests:
+
+Print out the following to the console:
+1) the version attribute 
+2) the id number from the data attribute
+
+
+
+
+```javascript
+{
+    "type": "item",
     "version": "1.7.20",
     "data":[
           {
