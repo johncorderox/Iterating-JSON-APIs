@@ -272,6 +272,8 @@ json['data'].each do |x|
   puts x['generic_name']
 end
 ```
+</details>
+
 2) In order to obtain the last image attributes, we first have to access the data array, and then print the specific attributes.
   <summary>Answer 2</summary>
   
