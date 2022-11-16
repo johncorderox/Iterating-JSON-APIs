@@ -255,3 +255,29 @@ json = JSON.parse'{
         }
       }
 ```
+### Explanation
+For this example, we have multiple JSON resources that is returned as an object that contains some data as an array of hashes, more attributes, and a meta hash. 
+
+Print out the following to the console:
+1) all generic names 
+2) the last resource's image full attribute, the w and h.
+
+### Answers
+1) To obtain every generic names in the request, we first need to obtain the data array of hashes, then loop through each result.
+<details>
+  <summary>Answer 1</summary>
+  
+```ruby
+json['data'].each do |x|
+  puts x['generic_name']
+end
+```
+2) In order to obtain the last image attributes, we first have to access the data array, and then print the specific attributes.
+  <summary>Answer 2</summary>
+  
+```ruby
+puts json['data'][1]['image']['full']
+puts json['data'][1]['image']['w']
+puts json['data'][1]['image']['h']
+```
+</details>
